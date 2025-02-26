@@ -12,6 +12,7 @@ impl FromStr for WhirType {
     type Err = String;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
+        println!("hihi");
         if s == "LDT" {
             Ok(Self::LDT)
         } else if s == "PCS" {
